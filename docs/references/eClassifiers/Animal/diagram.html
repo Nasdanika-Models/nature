@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="EN">
+  <head>
+    <title>Diagram</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/themes/default/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.1.0/github-markdown.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.css">
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/dark-head.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jstree@3.3.11/dist/jstree.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-vue@2.21.2/dist/bootstrap-vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika/html@master/model/app.gen/web-resources/js/components/table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js"></script>
+  
+<script src="../../../search-documents.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/olivernn/lunr.js@v2.3.9/lunr.js"></script>
+
+<script>
+// Script for full-text search of JsTree
+
+window.nsdJsTreeSearchCallback = function(str, node) { 
+    var sf = new $.vakata.search(str, true, { caseSensitive : false, fuzzy : false }); 
+    if (sf.search(node.text).isMatch) {
+		return true;
+	} 
+    let searchResult = this.search(str); 
+    for (const sr in searchResult) {
+        if (searchResult[sr].ref === node.original['data-nsd-label-uuid']) {
+            return true;
+        } 
+    } 
+    return false; 
+}.bind(lunr(function () {
+			  this.ref('id');
+			  this.field('title');
+			  this.field('content');
+
+			  for (const key in searchDocuments) {
+				  let doc = searchDocuments[key];
+				this.add({
+					id: doc['action-uuid'],
+					title: doc.title,
+					path: doc.path,
+					content: doc.content
+				});  
+			  }
+			}));
+</script>
+</head>
+  <body>
+    <div class="container-fluid nsd-app-container">
+      <div class="row">
+        <div class="col nsd-app-header">
+          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="a14fa373-7d40-47c7-b521-f269ae5f092e" class="nsd-app-header-title">
+            <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon">Nasdanika Models</a>
+          <ul class="nav nsd-app-header-navs">
+            <li class="nav-item">
+              <a href="../../../search.html" data-nsd-label-uuid="37f3706b-9c2a-4117-a85b-1babebf503cf" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+            </li>
+            <li class="nav-item">
+              <a href="../../../glossary.html" data-nsd-label-uuid="71cbab85-6a05-4551-b9a1-665c41c67b88" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-navbar">
+          <ul class="navbar navbar-light navbar-expand-lg">
+            <a href="../../../index.html" title="My description" data-nsd-label-uuid="b98296ce-d51e-4a63-9e5c-4ecd81adb83b" class="navbar-brand">
+              <img src="https://img.icons8.com/fluency/40/afternoon.png" class="nsd-app-label-icon">Nature</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd_b6" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nsd_b6" class="collapse navbar-collapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a href="../../../classifiers.html" data-nsd-label-uuid="96144877-a769-4757-9598-74bf185085d6" class="nav-link">Classifiers</a>
+                </li>
+                <li class="nav-item">
+                  </li><li data-nsd-label-uuid="21fa0733-6a05-4420-93c5-47b81b94a6cc" class="dropdown">
+                    <a role="button" data-toggle="dropdown" class="nav-link dropdown-toggle">
+                      <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon">Graphs</a>
+                    <div class="dropdown-menu">
+                      <a href="../../../default-graph.html" data-nsd-label-uuid="c655522f-c018-4ddd-b00c-9c7758f05d42" class="dropdown-item">Default Graph</a>
+                      <a href="../../../circular-layout-graph.html" data-nsd-label-uuid="c48379ca-6fbe-4af9-afe6-0e21d0ff94ac" class="dropdown-item">Circular Graph</a>
+                      <a href="../../../force-layout-graph.html" data-nsd-label-uuid="42981875-bda6-423c-8214-6b2d853bddd6" class="dropdown-item">Force Graph</a>
+                      <div title="With dependencies and sub-packages" class="dropdown-divider"></div>
+                      <a href="../../../default-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="81e65ff9-2e81-4fe9-9bb5-86d3b89a224c" class="dropdown-item">Default Graph</a>
+                      <a href="../../../circular-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="e96a0d46-a438-4606-adfa-a099d61dcb72" class="dropdown-item">Circular Graph</a>
+                      <a href="../../../force-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="1b175d1a-70ca-463d-b23a-39ec36720ed1" class="dropdown-item">Force Graph</a>
+                    </div>
+                  </li>
+                
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="row nsd-app-content-row">
+        <div class="col nsd-app-navigation-panel">
+          <div class="list-group list-group-flush">
+            <a href="index.html" title="Животные относятся к эукариотам (в клетках имеются ядра). Классическими признаками животных считаются: гетеротрофность (питание готовыми органическими соединениями) и способность активно передвигаться." data-nsd-label-uuid="1f773e66-285f-4867-9e6b-1ce5540d2dc6" class="list-group-item list-group-action active">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"><i>Животное</i></a>
+            <a href="../Biome/index.html" data-nsd-label-uuid="2beed7f7-1339-46b7-a7dc-765ec98bbb81" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"><i>Biome</i></a>
+            <a href="../Color/index.html" title="Цвет животного" data-nsd-label-uuid="dc0409ff-042b-487c-b801-1a046c176a3d" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EEnum.gif" class="nsd-app-label-icon">Цвет</a>
+            <a href="../Food/index.html" data-nsd-label-uuid="1cc51b6c-4f89-47ea-8f4a-0d89715c4feb" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EInterface.gif" class="nsd-app-label-icon"><i>Food</i></a>
+            <a href="../Forest/index.html" data-nsd-label-uuid="ef7aaccb-1e73-4012-ae86-f51fc07b1ff5" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Forest</a>
+            <a href="../Fox/index.html" title="Полифилетическая группа млекопитающих из семейства псовых отряда хищных" data-nsd-label-uuid="a89986f5-1109-434c-819d-da405b77f982" class="list-group-item list-group-action">
+              <img src="https://img.icons8.com/fluency-systems-regular/20/fox.png" class="nsd-app-label-icon">Лиса</a>
+            <a href="../Grass/index.html" data-nsd-label-uuid="94172a07-4a94-470a-9ae4-1242f18dcb43" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Grass</a>
+            <a href="../Hare/index.html" title="Зайка-попрыгайка" data-nsd-label-uuid="eed01910-510d-49bd-881b-1cf1104990ef" class="list-group-item list-group-action">
+              <img src="https://img.icons8.com/fluency-systems-regular/20/rabbit.png" class="nsd-app-label-icon">Зайка</a>
+            <a href="../LivingBeing/index.html" data-nsd-label-uuid="fc5388e0-6933-49d5-a682-dfcda9fd32df" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EInterface.gif" class="nsd-app-label-icon"><i>LivingBeing</i></a>
+            <a href="../Plant/index.html" data-nsd-label-uuid="ec9b067e-0b26-4ee9-ae3c-e5f2c6929e99" class="list-group-item list-group-action">
+              <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon">Plant</a>
+          </div>
+        </div>
+        <div data-nsd-label-uuid="93ce7466-396b-4eb7-8d2b-fb4fde51ef11" data-nsd-action-uris="uuid:93ce7466-396b-4eb7-8d2b-fb4fde51ef11" class="col nsd-app-content-panel">
+          <div class="container-fluid">
+            <div class="row nsd-app-content-panel-breadcrumb-row">
+              <div class="col">
+                <nav aria-label="breadcrumb" class="nsd-app-content-panel-breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="index.html" title="Животные относятся к эукариотам (в клетках имеются ядра). Классическими признаками животных считаются: гетеротрофность (питание готовыми органическими соединениями) и способность активно передвигаться." data-nsd-label-uuid="1f773e66-285f-4867-9e6b-1ce5540d2dc6">
+                        <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"><i>Животное</i></a>
+                    </li>
+                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="93ce7466-396b-4eb7-8d2b-fb4fde51ef11"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</span>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <div class="row nsd-app-content-panel-title-and-items-row">
+              <div class="col-auto">
+                <h1><span data-nsd-label-uuid="93ce7466-396b-4eb7-8d2b-fb4fde51ef11" class="nsd-app-content-panel-title"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</span>
+                </h1>
+              </div>
+            </div>
+            <div class="row nsd-app-content-panel-content-row">
+              <div class="col">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col"><img src="data:image/png;base64, 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" usemap="#plantuml_map_1761e86f-1927-4d5a-a0a4-263ecafe9fa4">
+<map id="plantuml_map_1761e86f-1927-4d5a-a0a4-263ecafe9fa4" name="plantuml_map_1761e86f-1927-4d5a-a0a4-263ecafe9fa4">
+<area shape="rect" id="id1" href="references/eOperations/eats-1/references/eParameters/food/index.html" title="Food which animal eats" alt="" coords="90,227,118,245">
+<area shape="rect" id="id2" href="../Color/index.html" title="Цвет животного" alt="" coords="115,41,147,59">
+<area shape="rect" id="id3" href="../Food/index.html" title="../Food/index.html" alt="" coords="153,345,186,363">
+<area shape="rect" id="id4" href="https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html" title="https://ecore.models.nasdanika.org/references/eClassifiers/EString/index.html" alt="" coords="105,202,151,219">
+<area shape="rect" id="id5" href="references/eOperations/eats-1/index.html" title="references/eOperations/eats-1/index.html" alt="" coords="58,227,144,245">
+<area shape="rect" id="id6" href="references/eStructuralFeatures/name/index.html" title="Имя животного, например 'Мурзик'" alt="" coords="58,202,151,219">
+<area shape="rect" id="id7" href="" title="Лиса тявкаяет" alt="" coords="13,357,106,375">
+<area shape="rect" id="id8" href="../Hare/index.html" title="Зайка-попрыгайка" alt="" coords="147,311,209,384">
+<area shape="rect" id="id9" href="../Fox/index.html" title="Полифилетическая группа млекопитающих из семейства псовых отряда хищных" alt="" coords="7,315,112,380">
+<area shape="rect" id="id10" href="../LivingBeing/index.html" title="../LivingBeing/index.html" alt="" coords="66,7,171,90">
+<area shape="rect" id="id11" href="" title="Животные относятся к эукариотам (в клетках имеются ядра). Классическими признаками животных считаются: гетеротрофность (питание готовыми органическими соединениями) и способность активно передвигаться." alt="" coords="52,150,185,250">
+</map>
+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col nsd-app-footer">
+          <ul class="nav nsd-app-footer-navs">
+            <li class="nav-item">
+              <a href="https://github.com/Nasdanika-Models/nature" data-nsd-label-uuid="d507f729-d330-4c18-9998-2ed36f58ca3c" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Sources</a>
+            </li>
+            <li class="nav-item"><span class="navbar-text">&nbsp;•&nbsp;</span>
+            </li>
+            <li class="nav-item">
+              <a href="https://icons8.com/" title="Icons from ICONS8" class="nav-link">
+                <img src="https://img.icons8.com/fluency/16/icons8-new-logo.png" class="nsd-app-label-icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

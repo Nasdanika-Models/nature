@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.nasdanika.models.nature/src/main/java" modelPluginID="org.nasdanika.models.nature"
+    modelName="Nature" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="17.0" suppressGenModelAnnotations="false"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>nature.ecore</foreignModel>
+  <genPackages prefix="Nature" basePackage="org.nasdanika.models" disposableProviderFactory="true"
+      ecorePackage="nature.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="nature.ecore#//Color">
+      <genEnumLiterals ecoreEnumLiteral="nature.ecore#//Color/White"/>
+      <genEnumLiterals ecoreEnumLiteral="nature.ecore#//Color/Brown"/>
+    </genEnums>
+    <genClasses ecoreClass="nature.ecore#//LivingBeing">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute nature.ecore#//LivingBeing/color"/>
+      <genOperations ecoreOperation="nature.ecore#//LivingBeing/communicate"/>
+    </genClasses>
+    <genClasses ecoreClass="nature.ecore#//Biome">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference nature.ecore#//Biome/livingBeings"/>
+    </genClasses>
+    <genClasses ecoreClass="nature.ecore#//Forest"/>
+    <genClasses image="false" ecoreClass="nature.ecore#//Food"/>
+    <genClasses ecoreClass="nature.ecore#//Animal">
+      <genTypeParameters ecoreTypeParameter="nature.ecore#//Animal/F"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute nature.ecore#//Animal/genericAttribute"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute nature.ecore#//Animal/name"/>
+      <genOperations ecoreOperation="nature.ecore#//Animal/eats">
+        <genParameters ecoreParameter="nature.ecore#//Animal/eats/food"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="nature.ecore#//Plant"/>
+    <genClasses ecoreClass="nature.ecore#//Grass"/>
+    <genClasses ecoreClass="nature.ecore#//Hare"/>
+    <genClasses ecoreClass="nature.ecore#//Fox">
+      <genOperations ecoreOperation="nature.ecore#//Fox/communicate"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
