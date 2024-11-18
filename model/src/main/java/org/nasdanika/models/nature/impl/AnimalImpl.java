@@ -4,14 +4,19 @@ package org.nasdanika.models.nature.impl;
 
 import java.lang.reflect.InvocationTargetException;
 
+import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 import org.nasdanika.models.nature.Animal;
 import org.nasdanika.models.nature.Color;
 import org.nasdanika.models.nature.Food;
@@ -28,6 +33,7 @@ import org.nasdanika.models.nature.NaturePackage;
  *   <li>{@link org.nasdanika.models.nature.impl.AnimalImpl#getColor <em>Color</em>}</li>
  *   <li>{@link org.nasdanika.models.nature.impl.AnimalImpl#getGenericAttribute <em>Generic Attribute</em>}</li>
  *   <li>{@link org.nasdanika.models.nature.impl.AnimalImpl#getName <em>Name</em>}</li>
+ *   <li>{@link org.nasdanika.models.nature.impl.AnimalImpl#getEaten <em>Eaten</em>}</li>
  * </ul>
  *
  * @generated
@@ -82,6 +88,16 @@ public abstract class AnimalImpl<F extends Food> extends MinimalEObjectImpl.Cont
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getEaten() <em>Eaten</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEaten()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Food> eaten;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -177,10 +193,21 @@ public abstract class AnimalImpl<F extends Food> extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
+	public EList<Food> getEaten() {
+		if (eaten == null) {
+			eaten = new EObjectContainmentEList<Food>(Food.class, this, NaturePackage.ANIMAL__EATEN);
+		}
+		return eaten;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	@Override
 	public void eats(F food) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		getEaten().add(food);
 	}
 
 	/**
@@ -201,6 +228,20 @@ public abstract class AnimalImpl<F extends Food> extends MinimalEObjectImpl.Cont
 	 * @generated
 	 */
 	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case NaturePackage.ANIMAL__EATEN:
+				return ((InternalEList<?>)getEaten()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case NaturePackage.ANIMAL__COLOR:
@@ -209,6 +250,8 @@ public abstract class AnimalImpl<F extends Food> extends MinimalEObjectImpl.Cont
 				return getGenericAttribute();
 			case NaturePackage.ANIMAL__NAME:
 				return getName();
+			case NaturePackage.ANIMAL__EATEN:
+				return getEaten();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -231,6 +274,10 @@ public abstract class AnimalImpl<F extends Food> extends MinimalEObjectImpl.Cont
 			case NaturePackage.ANIMAL__NAME:
 				setName((String)newValue);
 				return;
+			case NaturePackage.ANIMAL__EATEN:
+				getEaten().clear();
+				getEaten().addAll((Collection<? extends Food>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -252,6 +299,9 @@ public abstract class AnimalImpl<F extends Food> extends MinimalEObjectImpl.Cont
 			case NaturePackage.ANIMAL__NAME:
 				setName(NAME_EDEFAULT);
 				return;
+			case NaturePackage.ANIMAL__EATEN:
+				getEaten().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -270,6 +320,8 @@ public abstract class AnimalImpl<F extends Food> extends MinimalEObjectImpl.Cont
 				return genericAttribute != null;
 			case NaturePackage.ANIMAL__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case NaturePackage.ANIMAL__EATEN:
+				return eaten != null && !eaten.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

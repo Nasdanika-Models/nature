@@ -2,6 +2,8 @@
  */
 package org.nasdanika.models.nature;
 
+import org.eclipse.emf.common.util.EList;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Animal</b></em>'.
@@ -13,6 +15,7 @@ package org.nasdanika.models.nature;
  * <ul>
  *   <li>{@link org.nasdanika.models.nature.Animal#getGenericAttribute <em>Generic Attribute</em>}</li>
  *   <li>{@link org.nasdanika.models.nature.Animal#getName <em>Name</em>}</li>
+ *   <li>{@link org.nasdanika.models.nature.Animal#getEaten <em>Eaten</em>}</li>
  * </ul>
  *
  * @see org.nasdanika.models.nature.NaturePackage#getAnimal()
@@ -63,6 +66,18 @@ public interface Animal<F extends Food> extends LivingBeing {
 	 * @generated
 	 */
 	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Eaten</b></em>' containment reference list.
+	 * The list contents are of type {@link org.nasdanika.models.nature.Food}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Eaten</em>' containment reference list.
+	 * @see org.nasdanika.models.nature.NaturePackage#getAnimal_Eaten()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Food> getEaten();
 
 	/**
 	 * <!-- begin-user-doc -->

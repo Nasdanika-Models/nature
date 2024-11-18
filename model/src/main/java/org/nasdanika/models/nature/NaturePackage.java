@@ -244,13 +244,22 @@ public interface NaturePackage extends EPackage {
 	int ANIMAL__NAME = LIVING_BEING_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Eaten</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ANIMAL__EATEN = LIVING_BEING_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Animal</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ANIMAL_FEATURE_COUNT = LIVING_BEING_FEATURE_COUNT + 2;
+	int ANIMAL_FEATURE_COUNT = LIVING_BEING_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Communicate</em>' operation.
@@ -409,6 +418,15 @@ public interface NaturePackage extends EPackage {
 	int HARE__NAME = ANIMAL__NAME;
 
 	/**
+	 * The feature id for the '<em><b>Eaten</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HARE__EATEN = ANIMAL__EATEN;
+
+	/**
 	 * The number of structural features of the '<em>Hare</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -480,6 +498,15 @@ public interface NaturePackage extends EPackage {
 	 * @ordered
 	 */
 	int FOX__NAME = ANIMAL__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Eaten</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FOX__EATEN = ANIMAL__EATEN;
 
 	/**
 	 * The number of structural features of the '<em>Fox</em>' class.
@@ -631,6 +658,17 @@ public interface NaturePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getAnimal_Name();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link org.nasdanika.models.nature.Animal#getEaten <em>Eaten</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Eaten</em>'.
+	 * @see org.nasdanika.models.nature.Animal#getEaten()
+	 * @see #getAnimal()
+	 * @generated
+	 */
+	EReference getAnimal_Eaten();
 
 	/**
 	 * Returns the meta object for the '{@link org.nasdanika.models.nature.Animal#eats(org.nasdanika.models.nature.Food) <em>Eats</em>}' operation.
@@ -814,6 +852,14 @@ public interface NaturePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ANIMAL__NAME = eINSTANCE.getAnimal_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Eaten</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ANIMAL__EATEN = eINSTANCE.getAnimal_Eaten();
 
 		/**
 		 * The meta object literal for the '<em><b>Eats</b></em>' operation.

@@ -47,7 +47,8 @@ public class FoxImpl extends AnimalImpl<Hare> implements Fox {
 	
 	@Override
 	public void eats(Hare food) {
-		System.out.println("Yum, tasty!");
+		super.eats(food);
+		System.out.println("Yum, tasty!");		
 	}
 
 } //FoxImpl

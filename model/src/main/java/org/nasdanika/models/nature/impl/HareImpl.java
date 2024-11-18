@@ -44,5 +44,11 @@ public class HareImpl extends AnimalImpl<Grass> implements Hare {
 	public void setGenericAttribute(Grass newGenericAttribute) {
 		super.setGenericAttribute(newGenericAttribute);
 	}
+	
+	@Override
+	public void eats(Grass food) {
+		super.eats(food);
+		System.out.println("This grass is delicious!");
+	}
 
 } //HareImpl

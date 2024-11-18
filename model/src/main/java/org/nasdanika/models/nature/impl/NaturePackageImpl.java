@@ -269,6 +269,16 @@ public class NaturePackageImpl extends EPackageImpl implements NaturePackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getAnimal_Eaten() {
+		return (EReference)animalEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EOperation getAnimal__Eats__Food() {
 		return animalEClass.getEOperations().get(0);
 	}
@@ -376,6 +386,7 @@ public class NaturePackageImpl extends EPackageImpl implements NaturePackage {
 		animalEClass = createEClass(ANIMAL);
 		createEAttribute(animalEClass, ANIMAL__GENERIC_ATTRIBUTE);
 		createEAttribute(animalEClass, ANIMAL__NAME);
+		createEReference(animalEClass, ANIMAL__EATEN);
 		createEOperation(animalEClass, ANIMAL___EATS__FOOD);
 
 		plantEClass = createEClass(PLANT);
@@ -455,6 +466,7 @@ public class NaturePackageImpl extends EPackageImpl implements NaturePackage {
 		g1 = createEGenericType(animalEClass_F);
 		initEAttribute(getAnimal_GenericAttribute(), g1, "genericAttribute", null, 0, 1, Animal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAnimal_Name(), ecorePackage.getEString(), "name", null, 0, 1, Animal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAnimal_Eaten(), this.getFood(), null, "eaten", null, 0, -1, Animal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		EOperation op = initEOperation(getAnimal__Eats__Food(), null, "eats", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(animalEClass_F);

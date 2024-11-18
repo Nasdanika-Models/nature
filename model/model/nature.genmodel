@@ -24,6 +24,7 @@
       <genTypeParameters ecoreTypeParameter="nature.ecore#//Animal/F"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute nature.ecore#//Animal/genericAttribute"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute nature.ecore#//Animal/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference nature.ecore#//Animal/eaten"/>
       <genOperations ecoreOperation="nature.ecore#//Animal/eats">
         <genParameters ecoreParameter="nature.ecore#//Animal/eats/food"/>
       </genOperations>
