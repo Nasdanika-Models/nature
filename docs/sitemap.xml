@@ -2,462 +2,477 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
   <url>
     <loc>https://nature.models.nasdanika.org/circular-layout-graph-with-dependencies-and-subpackages.html</loc>
-    <lastmod>2024-11-13T10:32:45.107-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.279-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/circular-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.105-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.276-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/classifiers.html</loc>
-    <lastmod>2024-11-13T10:32:45.101-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.273-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/default-graph-with-dependencies-and-subpackages.html</loc>
-    <lastmod>2024-11-13T10:32:45.106-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.278-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/default-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.104-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.276-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/diagram.html</loc>
-    <lastmod>2024-11-13T10:32:45.103-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.275-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/force-layout-graph-with-dependencies-and-subpackages.html</loc>
-    <lastmod>2024-11-13T10:32:45.108-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.280-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/force-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.105-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.277-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/glossary.html</loc>
-    <lastmod>2024-11-13T10:32:45.112-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.284-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.026-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.195-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/attributes.html</loc>
-    <lastmod>2024-11-13T10:32:45.028-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.196-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/circular-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.042-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.211-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/default-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.040-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.210-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/diagram.html</loc>
-    <lastmod>2024-11-13T10:32:45.039-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.209-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/force-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.043-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.212-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.027-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.196-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/inheritance.html</loc>
-    <lastmod>2024-11-13T10:32:45.036-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.206-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/operations.html</loc>
-    <lastmod>2024-11-13T10:32:45.037-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.206-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/references/eOperations/eats-1/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.031-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.200-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/references/eOperations/eats-1/parameters.html</loc>
-    <lastmod>2024-11-13T10:32:45.032-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.201-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/references/eOperations/eats-1/references/eParameters/food/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.033-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.203-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/references/eStructuralFeatures/name/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.029-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.199-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/references/eStructuralFeatures/name/load-specification.html</loc>
-    <lastmod>2024-11-13T10:32:45.030-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.199-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/references.html</loc>
+    <lastmod>2024-12-01T17:16:33.207-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Animal/type-parameters.html</loc>
-    <lastmod>2024-11-13T10:32:45.038-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.208-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Biome/circular-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.048-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.218-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Biome/default-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.047-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.217-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Biome/diagram.html</loc>
-    <lastmod>2024-11-13T10:32:45.047-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.216-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Biome/force-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.049-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.219-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Biome/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.044-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.213-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Biome/inheritance.html</loc>
-    <lastmod>2024-11-13T10:32:45.045-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.214-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Biome/references.html</loc>
-    <lastmod>2024-11-13T10:32:45.044-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.213-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Color/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.050-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.219-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Color/references/eLiterals/White/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.051-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.221-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Food/circular-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.055-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.225-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Food/default-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.055-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.225-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Food/diagram.html</loc>
-    <lastmod>2024-11-13T10:32:45.053-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.223-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Food/force-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.056-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.226-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Food/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.052-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.222-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Food/inheritance.html</loc>
-    <lastmod>2024-11-13T10:32:45.052-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.222-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Forest/circular-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.061-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.231-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Forest/default-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.060-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.230-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Forest/diagram.html</loc>
-    <lastmod>2024-11-13T10:32:45.059-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.229-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Forest/force-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.062-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.232-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Forest/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.057-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.227-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Forest/inheritance.html</loc>
-    <lastmod>2024-11-13T10:32:45.058-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.228-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Forest/load-specification.html</loc>
-    <lastmod>2024-11-13T10:32:45.062-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.232-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Forest/references.html</loc>
-    <lastmod>2024-11-13T10:32:45.058-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.228-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Fox/attributes.html</loc>
-    <lastmod>2024-11-13T10:32:45.064-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.234-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Fox/circular-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.068-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.239-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Fox/default-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.067-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.238-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Fox/diagram.html</loc>
-    <lastmod>2024-11-13T10:32:45.067-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.237-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Fox/force-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.069-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.240-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Fox/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.063-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.233-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Fox/inheritance.html</loc>
-    <lastmod>2024-11-13T10:32:45.065-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.235-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Fox/load-specification.html</loc>
-    <lastmod>2024-11-13T10:32:45.070-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.241-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Fox/operations.html</loc>
-    <lastmod>2024-11-13T10:32:45.066-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.236-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://nature.models.nasdanika.org/references/eClassifiers/Fox/references.html</loc>
+    <lastmod>2024-12-01T17:16:33.236-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Grass/attributes.html</loc>
-    <lastmod>2024-11-13T10:32:45.071-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.242-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Grass/circular-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.075-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.246-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Grass/default-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.075-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.246-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Grass/diagram.html</loc>
-    <lastmod>2024-11-13T10:32:45.074-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.245-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Grass/force-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.076-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.247-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Grass/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.070-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.242-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Grass/inheritance.html</loc>
-    <lastmod>2024-11-13T10:32:45.072-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.243-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Grass/load-specification.html</loc>
-    <lastmod>2024-11-13T10:32:45.077-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.248-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Grass/operations.html</loc>
-    <lastmod>2024-11-13T10:32:45.073-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.244-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Hare/attributes.html</loc>
-    <lastmod>2024-11-13T10:32:45.079-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.249-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Hare/circular-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.083-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.254-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Hare/default-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.082-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.254-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Hare/diagram.html</loc>
-    <lastmod>2024-11-13T10:32:45.082-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.253-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Hare/force-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.084-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.255-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Hare/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.078-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.249-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Hare/inheritance.html</loc>
-    <lastmod>2024-11-13T10:32:45.079-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.250-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Hare/load-specification.html</loc>
-    <lastmod>2024-11-13T10:32:45.085-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.256-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Hare/operations.html</loc>
-    <lastmod>2024-11-13T10:32:45.081-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.251-05:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://nature.models.nasdanika.org/references/eClassifiers/Hare/references.html</loc>
+    <lastmod>2024-12-01T17:16:33.252-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/LivingBeing/attributes.html</loc>
-    <lastmod>2024-11-13T10:32:45.086-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.259-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/LivingBeing/circular-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.091-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.264-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/LivingBeing/default-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.090-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.263-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/LivingBeing/diagram.html</loc>
-    <lastmod>2024-11-13T10:32:45.090-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.263-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/LivingBeing/force-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.092-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.265-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/LivingBeing/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.086-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.259-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/LivingBeing/inheritance.html</loc>
-    <lastmod>2024-11-13T10:32:45.088-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.261-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/LivingBeing/operations.html</loc>
-    <lastmod>2024-11-13T10:32:45.088-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.261-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Plant/attributes.html</loc>
-    <lastmod>2024-11-13T10:32:45.093-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.266-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Plant/circular-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.098-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.271-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Plant/default-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.097-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.270-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Plant/diagram.html</loc>
-    <lastmod>2024-11-13T10:32:45.097-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.269-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Plant/force-layout-graph.html</loc>
-    <lastmod>2024-11-13T10:32:45.099-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.271-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Plant/index.html</loc>
-    <lastmod>2024-11-13T10:32:45.093-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.266-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Plant/inheritance.html</loc>
-    <lastmod>2024-11-13T10:32:45.095-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.267-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Plant/load-specification.html</loc>
-    <lastmod>2024-11-13T10:32:45.100-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.272-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/references/eClassifiers/Plant/operations.html</loc>
-    <lastmod>2024-11-13T10:32:45.096-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.268-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://nature.models.nasdanika.org/search.html</loc>
-    <lastmod>2024-11-13T10:32:45.110-05:00</lastmod>
+    <lastmod>2024-12-01T17:16:33.282-05:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
