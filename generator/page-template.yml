@@ -20,6 +20,20 @@ bootstrap.Page:
     - https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/js/components/table.js
     - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
     - https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js 
+    - https://cdn.jsdelivr.net/npm/3d-force-graph
+  head:
+    content.Text: |+2    
+      <!-- Node text styling -->      
+      <style>
+        .node-label {
+              font-size: 12px;
+              padding: 1px 4px;
+              border-radius: 4px;
+              background-color: rgba(0,0,0,0.5);
+              user-select: none;
+            }               
+      </style>
+    
   body:
     app.Page:
       fluid: true
