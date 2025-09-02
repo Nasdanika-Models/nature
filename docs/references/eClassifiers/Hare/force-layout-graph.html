@@ -25,9 +25,20 @@
     <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/html-app@master/gen/web-resources/js/components/table.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/components/table.js"></script>
-  </head>
+    <script src="https://cdn.jsdelivr.net/npm/3d-force-graph"></script><!-- Node text styling -->      
+<style>
+  .node-label {
+        font-size: 12px;
+        padding: 1px 4px;
+        border-radius: 4px;
+        background-color: rgba(0,0,0,0.5);
+        user-select: none;
+      }               
+</style>
+
+</head>
   <body>
-    <div tabindex="-1" id="nsd_sp" class="modal">
+    <div tabindex="-1" id="nsd_rs" class="modal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">Hover mouse over nodes elements to display tooltips.
@@ -40,14 +51,14 @@ Drag to rearrange, nodes will not stay in place once released.
     <div class="container-fluid nsd-app-container">
       <div class="row">
         <div class="col nsd-app-header">
-          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="20ee432d-5746-4bca-8752-de40d49db3eb" class="nsd-app-header-title">
+          <a href="https://github.com/Nasdanika-Models" data-nsd-label-uuid="73a8d66b-642b-443d-afb5-efdcc787786f" class="nsd-app-header-title">
             <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon"/>Nasdanika Models</a>
           <ul class="nav nsd-app-header-navs">
             <li class="nav-item">
-              <a href="../../../search.html" data-nsd-label-uuid="ab4548f6-d1b8-47c3-a526-52a755f5cc77" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+              <a href="../../../search.html" data-nsd-label-uuid="2ccfecfb-b7bd-4ed0-badc-47f28a938c95" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
             </li>
             <li class="nav-item">
-              <a href="../../../glossary.html" data-nsd-label-uuid="ce30a8e2-60e9-4c62-970d-2221ffc9208f" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
+              <a href="../../../glossary.html" data-nsd-label-uuid="bda6af82-fc14-42b8-bb60-7911c5b3ebd7" class="nav-link"><span class="fas fa-book nsd-app-label-icon"></span>Glossary</a>
             </li>
           </ul>
         </div>
@@ -55,30 +66,32 @@ Drag to rearrange, nodes will not stay in place once released.
       <div class="row">
         <div class="col nsd-app-navbar">
           <ul class="navbar navbar-light navbar-expand-lg">
-            <a href="../../../index.html" title="My description" data-nsd-label-uuid="81e35e30-4bac-49a8-bd87-629464435bce" class="navbar-brand">
+            <a href="../../../index.html" title="My description" data-nsd-label-uuid="dac2ffe0-5a72-46c8-a0e9-b4d6873f024d" class="navbar-brand">
               <img src="https://img.icons8.com/fluency/40/afternoon.png" class="nsd-app-label-icon"/>Nature</a>
-            <button type="button" data-toggle="collapse" data-target="#nsd_se" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            <button type="button" data-toggle="collapse" data-target="#nsd_rh" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd_se" class="collapse navbar-collapse">
+            <div id="nsd_rh" class="collapse navbar-collapse">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a href="../../../classifiers.html" data-nsd-label-uuid="a87c530d-ff62-4de0-8248-673a3a32af48" class="nav-link">Classifiers</a>
+                  <a href="../../../classifiers.html" data-nsd-label-uuid="ff2eefaf-c184-4c25-931b-f34cd01f6553" class="nav-link">Classifiers</a>
                 </li>
                 <li class="nav-item">
-                  <a href="../../../diagram.html" data-nsd-label-uuid="f87e76fc-94b7-413f-a15d-e6f50cf27efd" class="nav-link"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</a>
+                  <a href="../../../diagram.html" data-nsd-label-uuid="4571021b-1539-4abb-aa5a-b6c5c18ef984" class="nav-link"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</a>
                 </li>
                 <li class="nav-item">
-                  <li data-nsd-label-uuid="1b6d6ca9-8c12-4c6e-bbc3-0f18409fc6e6" class="dropdown">
+                  <li data-nsd-label-uuid="5c84e585-d6fe-48bd-bbde-1f353c763056" class="dropdown">
                     <a role="button" data-toggle="dropdown" class="nav-link dropdown-toggle">
                       <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon"/>Graphs</a>
                     <div class="dropdown-menu">
-                      <a href="../../../default-graph.html" data-nsd-label-uuid="85e6b9c9-f1f3-4b6f-9206-63081c295e84" class="dropdown-item">Default Graph</a>
-                      <a href="../../../circular-layout-graph.html" data-nsd-label-uuid="f7a55928-cbbf-43ea-a2ac-7587bdf717fd" class="dropdown-item">Circular Graph</a>
-                      <a href="../../../force-layout-graph.html" data-nsd-label-uuid="733f118d-1ba5-43f4-aedd-54597166068c" class="dropdown-item">Force Graph</a>
+                      <a href="../../../default-graph.html" data-nsd-label-uuid="d3d263e2-b01f-4eab-8460-8ae1c22be230" class="dropdown-item">Default Graph</a>
+                      <a href="../../../circular-layout-graph.html" data-nsd-label-uuid="7ba1d028-94d8-4784-a2aa-e082e5e92ff0" class="dropdown-item">Circular Graph</a>
+                      <a href="../../../force-layout-graph.html" data-nsd-label-uuid="7c6fd013-17e7-4d54-9d99-ae1783f0fd2d" class="dropdown-item">Force Graph</a>
+                      <a href="../../../force-layout-graph-3d.html" data-nsd-label-uuid="0a56a677-e8d6-4cb8-9f75-4d1061a64f88" class="dropdown-item">Force Graph 3D</a>
                       <div title="With dependencies and sub-packages" class="dropdown-divider"></div>
-                      <a href="../../../default-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="cea0ded4-450d-4d80-a068-b9626c5fdffe" class="dropdown-item">Default Graph</a>
-                      <a href="../../../circular-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="6c66f136-5eab-4af7-bc73-97efef64c773" class="dropdown-item">Circular Graph</a>
-                      <a href="../../../force-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="bbd767e7-7031-40ff-9dca-aa9e106f03d7" class="dropdown-item">Force Graph</a>
+                      <a href="../../../default-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="fba095da-0f6a-4ae7-91b3-4ee85a3a69fa" class="dropdown-item">Default Graph</a>
+                      <a href="../../../circular-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="af4a3462-0b2d-4842-bea6-e5003df16d5e" class="dropdown-item">Circular Graph</a>
+                      <a href="../../../force-layout-graph-with-dependencies-and-subpackages.html" data-nsd-label-uuid="19887271-3c56-4fe0-85a2-ce054c0fdc50" class="dropdown-item">Force Graph</a>
+                      <a href="../../../force-layout-graph-3d-with-dependencies-and-subpackages.html" data-nsd-label-uuid="7fac2aa2-122a-49aa-8744-8d6c8bf928c9" class="dropdown-item">Force Graph 3D</a>
                     </div>
                   </li>
                 </li>
@@ -90,44 +103,44 @@ Drag to rearrange, nodes will not stay in place once released.
       <div class="row nsd-app-content-row">
         <div class="col nsd-app-navigation-panel">
           <div class="list-group list-group-flush">
-            <a href="../Animal/index.html" title="???????? ????????? ? ?????????? (? ??????? ??????? ????). ????????????? ?????????? ???????? ?????????: ??????????????? (??????? ???????? ????????????? ????????????) ? ??????????? ??????? ?????????????." data-nsd-label-uuid="1318dd74-4dda-4e46-8bcf-e26ba402fc60" class="list-group-item list-group-action">
+            <a href="../Animal/index.html" title="???????? ????????? ? ?????????? (? ??????? ??????? ????). ????????????? ?????????? ???????? ?????????: ??????????????? (??????? ???????? ????????????? ????????????) ? ??????????? ??????? ?????????????." data-nsd-label-uuid="0c920415-a847-4179-921e-b5dc0fbb9065" class="list-group-item list-group-action">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/><i>????????</i></a>
-            <a href="../Biome/index.html" data-nsd-label-uuid="b26e4522-5035-4696-9b4c-3fd117444c60" class="list-group-item list-group-action">
+            <a href="../Biome/index.html" data-nsd-label-uuid="63a84963-f01b-4637-aa6e-b0572554bbe9" class="list-group-item list-group-action">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/><i>Biome</i></a>
-            <a href="../Color/index.html" title="???? ?????????" data-nsd-label-uuid="9e83baef-79de-42c6-a5ad-3c71641abc37" class="list-group-item list-group-action">
+            <a href="../Color/index.html" title="???? ?????????" data-nsd-label-uuid="6fb392da-309b-4788-8c03-ea9c2c83cbe8" class="list-group-item list-group-action">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EEnum.gif" class="nsd-app-label-icon"/>????</a>
-            <a href="../Food/index.html" data-nsd-label-uuid="218ebb41-5a4f-45fc-8dfe-79dc7ba11257" class="list-group-item list-group-action">
+            <a href="../Food/index.html" data-nsd-label-uuid="dc15c3cc-a500-460e-ae20-dbb548233003" class="list-group-item list-group-action">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EInterface.gif" class="nsd-app-label-icon"/><i>Food</i></a>
-            <a href="../Forest/index.html" data-nsd-label-uuid="84f5a853-9838-4e8f-8a33-f151cada8cf7" class="list-group-item list-group-action">
+            <a href="../Forest/index.html" data-nsd-label-uuid="00fa4b21-bcb1-472f-b04c-81c9907b9030" class="list-group-item list-group-action">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Forest</a>
-            <a href="../Fox/index.html" title="???????????????? ?????? ????????????? ?? ????????? ?????? ?????? ??????" data-nsd-label-uuid="bb6bda3d-cfe9-422f-ab0f-c5ed49734e69" class="list-group-item list-group-action">
+            <a href="../Fox/index.html" title="???????????????? ?????? ????????????? ?? ????????? ?????? ?????? ??????" data-nsd-label-uuid="0bdad740-f296-4b95-a655-130292b3de8c" class="list-group-item list-group-action">
               <img src="https://img.icons8.com/fluency-systems-regular/20/fox.png" class="nsd-app-label-icon"/>????</a>
-            <a href="../Grass/index.html" data-nsd-label-uuid="ea511ab6-cc6b-4ff6-be5c-cfb359288924" class="list-group-item list-group-action">
+            <a href="../Grass/index.html" data-nsd-label-uuid="7e0c1d5e-9794-486e-9f5f-460d88ef428a" class="list-group-item list-group-action">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Grass</a>
-            <a href="index.html" data-nsd-label-uuid="e0fed7e8-67d5-4384-951d-c961eb6d11f5" class="list-group-item list-group-action active">
+            <a href="index.html" data-nsd-label-uuid="cfd84960-5b5e-4f86-b6f0-ddaf485e0553" class="list-group-item list-group-action active">
               <img src="https://img.icons8.com/fluency-systems-regular/20/rabbit.png" class="nsd-app-label-icon"/>?????</a>
-            <a href="../LivingBeing/index.html" data-nsd-label-uuid="3d20f106-77fc-4638-82fc-581420e50391" class="list-group-item list-group-action">
+            <a href="../LivingBeing/index.html" data-nsd-label-uuid="bdf0d584-bc69-4836-b8af-8a7b87f74d64" class="list-group-item list-group-action">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EInterface.gif" class="nsd-app-label-icon"/><i>LivingBeing</i></a>
-            <a href="../Plant/index.html" data-nsd-label-uuid="27635f61-8953-4a66-becb-f83d2db30412" class="list-group-item list-group-action">
+            <a href="../Plant/index.html" data-nsd-label-uuid="100feaac-3896-481c-9988-8831ec21a530" class="list-group-item list-group-action">
               <img src="https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif" class="nsd-app-label-icon"/>Plant</a>
           </div>
         </div>
-        <div data-nsd-label-uuid="6075260e-dba5-4693-a59e-ade48cc23678" data-nsd-action-uris="uuid:6075260e-dba5-4693-a59e-ade48cc23678" class="col nsd-app-content-panel">
+        <div data-nsd-label-uuid="210a9bfa-2521-4241-8959-21a634da7b6b" data-nsd-action-uris="uuid:210a9bfa-2521-4241-8959-21a634da7b6b" class="col nsd-app-content-panel">
           <div class="container-fluid">
             <div class="row nsd-app-content-panel-breadcrumb-row">
               <div class="col">
                 <nav aria-label="breadcrumb" class="nsd-app-content-panel-breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                      <a href="index.html" data-nsd-label-uuid="e0fed7e8-67d5-4384-951d-c961eb6d11f5">
+                      <a href="index.html" data-nsd-label-uuid="cfd84960-5b5e-4f86-b6f0-ddaf485e0553">
                         <img src="https://img.icons8.com/fluency-systems-regular/20/rabbit.png" class="nsd-app-label-icon"/>?????</a>
                     </li>
                     <li class="breadcrumb-item">
-                      <a href="diagram.html" data-nsd-label-uuid="20925269-1612-4fc3-8e53-28bbce10d2a6"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</a>
+                      <a href="diagram.html" data-nsd-label-uuid="dd306747-f257-463d-acb2-f0e4d0942b93"><span class="fas fa-project-diagram nsd-app-label-icon"></span>Diagram</a>
                     </li>
-                    <li class="breadcrumb-item"><span data-nsd-label-uuid="3183bc7a-5e1e-4876-9034-b8527e9d73c4"><img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon"/>Graphs</span>
+                    <li class="breadcrumb-item"><span data-nsd-label-uuid="e6c3b1e8-8c66-4760-bd39-687096e8b19f"><img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/external-diagram-seo-media-dreamstale-lineal-dreamstale.png" class="nsd-app-label-icon"/>Graphs</span>
                     </li>
-                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="6075260e-dba5-4693-a59e-ade48cc23678">Force Graph</span>
+                    <li class="breadcrumb-item active"><span data-nsd-label-uuid="210a9bfa-2521-4241-8959-21a634da7b6b">Force Graph</span>
                     </li>
                   </ol>
                 </nav>
@@ -135,7 +148,7 @@ Drag to rearrange, nodes will not stay in place once released.
             </div>
             <div class="row nsd-app-content-panel-title-and-items-row">
               <div class="col-auto">
-                <H1><span data-nsd-label-uuid="6075260e-dba5-4693-a59e-ade48cc23678" class="nsd-app-content-panel-title">Force Graph<a data-toggle="modal" data-target="#nsd_sp" href="#" title="A live force-layout graph of this classifier and related classifiers showing relationships between them" style="vertical-align:super;font-size:x-small;margin-left:0.2em"><span class="far fa-question-circle nsd-app-label-icon"></span></a></span>
+                <H1><span data-nsd-label-uuid="210a9bfa-2521-4241-8959-21a634da7b6b" class="nsd-app-content-panel-title">Force Graph<a data-toggle="modal" data-target="#nsd_rs" href="#" title="A live force-layout graph of this classifier and related classifiers showing relationships between them" style="vertical-align:super;font-size:x-small;margin-left:0.2em"><span class="far fa-question-circle nsd-app-label-icon"></span></a></span>
                 </H1>
               </div>
             </div>
@@ -143,7 +156,7 @@ Drag to rearrange, nodes will not stay in place once released.
               <div class="col">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col"><div id="graph-container-24" class="row" style="height:80vh;width:100%">
+                    <div class="col"><div id="graph-container-24" class="row" style="height:70vh;width:100%">
 </div>
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -152,7 +165,7 @@ Drag to rearrange, nodes will not stay in place once released.
 			render: "canvas",
 			useDirtyRect: false
 		});
-		var option = {"legend":{},"series":[{"type":"graph","emphasis":{"focus":"adjacency"},"data":[{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Animal@ecore://nasdanika.org/models/nature","name":"Animal","value":{"description":"???????? ????????? ? ?????????? (? ??????? ??????? ????). ????????????? ?????????? ???????? ?????????: ??????????????? (??????? ???????? ????????????? ????????????) ? ??????????? ??????? ?????????????.","externalLink":"../Animal/index.html"},"x":746.0245778339307,"y":382.99134555644423,"category":0},{"symbol":"image://https://img.icons8.com/fluency-systems-regular/20/rabbit.png","id":"Hare@ecore://nasdanika.org/models/nature","name":"Hare","value":{"externalLink":""},"x":584.5852944622941,"y":565.9035219331685,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Grass@ecore://nasdanika.org/models/nature","name":"Grass","value":{"externalLink":"../Grass/index.html"},"x":340.7060138023554,"y":559.391767391668,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EInterface.gif","id":"Food@ecore://nasdanika.org/models/nature","name":"Food","value":{"externalLink":"../Food/index.html"},"x":502.14529717399256,"y":376.4795910149435,"category":0}],"symbolSize":20,"roam":true,"layout":"force","links":[{"source":0,"target":1},{"source":0,"target":3},{"source":1,"target":0},{"source":1,"target":2},{"source":1,"target":3},{"source":2,"target":3},{"source":3,"target":0},{"source":3,"target":1},{"source":3,"target":2}],"categories":[{"name":"nature"}],"draggable":true,"label":{"show":true,"position":"right"},"lineStyle":{"color":"source","curveness":0},"force":{"repulsion":200,"gravity":0.1,"edgeLength":200}}]};
+		var option = {"legend":{},"series":[{"type":"graph","emphasis":{"focus":"adjacency"},"data":[{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EInterface.gif","id":"Food@ecore://nasdanika.org/models/nature","name":"Food","value":{"externalLink":"../Food/index.html"},"x":670.2723880540372,"y":412.61525473284803,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Grass@ecore://nasdanika.org/models/nature","name":"Grass","value":{"externalLink":"../Grass/index.html"},"x":548.7362420416067,"y":626.3704525431306,"category":0},{"symbol":"image://https://cdn.jsdelivr.net/gh/Nasdanika-Models/ecore@master/graph/web-resources/icons/EClass.gif","id":"Animal@ecore://nasdanika.org/models/nature","name":"Animal","value":{"description":"???????? ????????? ? ?????????? (? ??????? ??????? ????). ????????????? ?????????? ???????? ?????????: ??????????????? (??????? ???????? ????????????? ????????????) ? ??????????? ??????? ?????????????.","externalLink":"../Animal/index.html"},"x":586.6683490697964,"y":181.37364073571814,"category":0},{"symbol":"image://https://img.icons8.com/fluency-systems-regular/20/rabbit.png","id":"Hare@ecore://nasdanika.org/models/nature","name":"Hare","value":{"externalLink":""},"x":465.13220305736314,"y":395.1288385460342,"category":0}],"symbolSize":20,"roam":true,"layout":"force","links":[{"source":0,"target":1},{"source":0,"target":2},{"source":0,"target":3},{"source":1,"target":0},{"source":2,"target":0},{"source":2,"target":3},{"source":3,"target":0},{"source":3,"target":1},{"source":3,"target":2}],"categories":[{"name":"nature"}],"draggable":true,"label":{"show":true,"position":"right"},"lineStyle":{"color":"source","curveness":0},"force":{"repulsion":200,"gravity":0.1,"edgeLength":200}}]};
 		option.tooltip = {};
 		option.series[0].tooltip = {
 			formatter: function(arg) {
@@ -184,7 +197,7 @@ Drag to rearrange, nodes will not stay in place once released.
         <div class="col nsd-app-footer">
           <ul class="nav nsd-app-footer-navs">
             <li class="nav-item">
-              <a href="https://github.com/Nasdanika-Models/nature" data-nsd-label-uuid="c766fc60-b00e-4c19-bd60-96fba32438d5" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Sources</a>
+              <a href="https://github.com/Nasdanika-Models/nature" data-nsd-label-uuid="8bbef3a2-8044-4267-bd7e-f28f1f75b583" class="nav-link"><span class="fab fa-github nsd-app-label-icon"></span>Sources</a>
             </li>
             <li class="nav-item"><span class="navbar-text">&nbsp;&bull;&nbsp;</span>
             </li>
