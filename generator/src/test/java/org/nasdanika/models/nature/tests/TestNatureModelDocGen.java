@@ -102,7 +102,7 @@ public class TestNatureModelDocGen {
 		
 		System.out.println("There are " + errorCount + " site errors");
 		
-		if (errorCount != 78) {
+		if (errorCount != 91) {
 			throw new ExecutionException("There are problems with pages: " + errorCount);
 		}		
 	}

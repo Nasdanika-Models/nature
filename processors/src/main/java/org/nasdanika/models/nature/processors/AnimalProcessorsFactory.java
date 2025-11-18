@@ -2,6 +2,7 @@ package org.nasdanika.models.nature.processors;
 
 import java.util.function.BiConsumer;
 
+import org.eclipse.emf.ecore.EObject;
 import org.nasdanika.common.Context;
 import org.nasdanika.common.ProgressMonitor;
 import org.nasdanika.common.Util;
@@ -45,7 +46,7 @@ public class AnimalProcessorsFactory {
 	)
 	public EClassNodeProcessor createAnimalProcessor(
 			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
-			java.util.function.Function<ProgressMonitor, Action> prototypeProvider,
+			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 			ProgressMonitor progressMonitor) {		
 		return new EClassNodeProcessor(config, context, prototypeProvider) {
@@ -71,7 +72,7 @@ public class AnimalProcessorsFactory {
 	)
 	public EAttributeNodeProcessor createAnimalNameProcessor(
 			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
-			java.util.function.Function<ProgressMonitor, Action> prototypeProvider,
+			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 			ProgressMonitor progressMonitor) {		
 		return new EAttributeNodeProcessor(config, context, prototypeProvider) {
@@ -114,7 +115,7 @@ public class AnimalProcessorsFactory {
 	)
 	public EOperationNodeProcessor createAnimalEatsProcessor(
 			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
-			java.util.function.Function<ProgressMonitor, Action> prototypeProvider,
+			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 			ProgressMonitor progressMonitor) {		
 		
@@ -144,7 +145,7 @@ public class AnimalProcessorsFactory {
 	)
 	public EParameterNodeProcessor createAnimalEatsFoodProcessor(
 			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
-			java.util.function.Function<ProgressMonitor, Action> prototypeProvider,
+			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 			ProgressMonitor progressMonitor) {		
 		return new EParameterNodeProcessor(config, context, prototypeProvider) {
@@ -168,7 +169,7 @@ public class AnimalProcessorsFactory {
 	)
 	public ETypeParameterNodeProcessor createAnimalFoodTypeParameterProcessor(
 			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
-			java.util.function.Function<ProgressMonitor, Action> prototypeProvider,
+			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 			ProgressMonitor progressMonitor) {		
 		return new ETypeParameterNodeProcessor(config, context, prototypeProvider) {
@@ -192,7 +193,7 @@ public class AnimalProcessorsFactory {
 	)
 	public EGenericTypeNodeProcessor createAnimalFoodTypeParameterBoundProcessor(
 			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
-			java.util.function.Function<ProgressMonitor, Action> prototypeProvider,
+			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 			ProgressMonitor progressMonitor) {			
 		return new EGenericTypeNodeProcessor(config, context, prototypeProvider) {
