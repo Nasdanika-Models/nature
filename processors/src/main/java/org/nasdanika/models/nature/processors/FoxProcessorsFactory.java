@@ -44,7 +44,7 @@ public class FoxProcessorsFactory {
 			icon = "https://img.icons8.com/fluency-systems-regular/20/fox.png"
 	)
 	public EClassNodeProcessor createFoxProcessor(
-			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 			ProgressMonitor progressMonitor) {		
